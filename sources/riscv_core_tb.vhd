@@ -33,6 +33,8 @@ entity riscv_core_tb is
 end riscv_core_tb;
 
 architecture tb of riscv_core_tb is
+
+constant DEPTH : integer := 9;
   
 signal	clk		: std_logic := '0';
 signal	rstn		: std_logic := '0';
