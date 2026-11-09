@@ -26,9 +26,6 @@ library std;
 use     std.textio.all;                                                      
 use     std.env.all;
 
-library work;
-use     work.all;
-
 entity riscv_core_tb is 
 end riscv_core_tb;
 
