@@ -49,7 +49,7 @@ signal dmem_write : std_logic_vector(31 downto 0);
 signal imem_addr_div4 : std_logic_vector(DEPTH-1 downto 0);
 signal dmem_addr_div4 : std_logic_vector(DEPTH-1 downto 0);
 
-constant PERIOD   : time := 100 ns;
+constant PERIOD   : time := 10 ns;
 
 begin
 
@@ -58,7 +58,7 @@ MEM0 : entity work.dpm
     WIDTH => 32,
     DEPTH => 9,
     RESET => 16#00000000#,
-    INIT  => "riscv_basic.mem")
+    INIT  => "asm/riscv_basic.mem")
   port map (
     -- Port A
     i_a_clk   => clk,          -- Clock
